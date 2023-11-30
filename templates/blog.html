@@ -1,0 +1,74 @@
+{% extends "base.html" %} {% block title %}About {% endblock %} {% block body %}
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .blog-post {
+    margin-bottom: 40px;
+  }
+
+  .blog-post img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .blog-post h2 {
+    margin-top: 10px;
+  }
+
+  .post-date {
+    color: #888;
+    font-size: 14px;
+  }
+
+  a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
+
+  a:hover {
+    background-color: #555;
+  }
+</style>
+
+<main>
+  <article class="blog-post">
+    <img src="blog-post1.jpg" alt="Blog Post 1 Image" />
+    <h2>Post Title 1</h2>
+    <p class="post-date">Published on January 1, 2023</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <a href="#">Read more</a>
+  </article>
+
+  <article class="blog-post">
+    <img src="blog-post2.jpg" alt="Blog Post 2 Image" />
+    <h2>Post Title 2</h2>
+    <p class="post-date">Published on February 15, 2023</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <a href="#">Read more</a>
+  </article>
+
+  <!-- Add more articles as needed -->
+</main>
+
+{% endblock body %}
